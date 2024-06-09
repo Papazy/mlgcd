@@ -1,4 +1,4 @@
-const {postPredictHandler, getPredictHistories} = require('../server/handler.js');
+const {postPredictHandler, getPredictHistories} = require('./handler.js');
 
 const routes = [
   {

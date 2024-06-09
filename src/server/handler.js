@@ -21,13 +21,9 @@ async function postPredictHandler(request, h) {
   };
 
   await storeData(id, data);
-  return h
-    .response({
+  return h.response({
       status: 'success',
-      message:
-        resultScore > 99
-          ? 'Model is predicted successfully'
-          : 'Model is predicted successfully but under threshold. Please use the correct picture',
+      message: 'Model is predicted successfully',
       data,
     })
     .code(201);
